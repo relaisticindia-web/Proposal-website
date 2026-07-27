@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Butki ❤️</title>
+<style>
+body{margin:0;overflow:hidden;display:flex;justify-content:center;align-items:center;height:100vh;background:#120000;color:#fff;font-family:Arial}
+.c{z-index:2;text-align:center}.b{font-size:90px;animation:f 3s ease-in-out infinite}h1{text-shadow:0 0 15px red}
+@keyframes f{50%{transform:translateY(-10px)}}
+.h{position:fixed;top:-5vh;color:#ff3355;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh);opacity:0}}
+</style></head>
+<body><div class="c"><div class="b">💐🌹</div><h1>Butki ❤️</h1></div>
+<script>
+setInterval(()=>{let d=document.createElement('div');d.className='h';d.textContent='❤️';
+d.style.left=Math.random()*100+'vw';d.style.fontSize=(15+Math.random()*25)+'px';
+d.style.animationDuration=(4+Math.random()*4)+'s';document.body.appendChild(d);
+setTimeout(()=>d.remove(),8000)},120);
+</script></body></html>
